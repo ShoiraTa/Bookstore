@@ -43,6 +43,8 @@ or
 
 - Go to the dist folder and open index.html
 
+## Author
+
 👤 **Shoira Toshpulatova**
 
 - GitHub: [@githubhandle](https://github.com/shoirata)
