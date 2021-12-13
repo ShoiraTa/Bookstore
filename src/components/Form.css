@@ -1,0 +1,23 @@
+.bookInput {
+  width: 500px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #f1f1f1;
+  outline: none;
+  padding: 0 1rem;
+}
+
+.bookSelect,
+.submit {
+  padding: 0.55rem 1rem;
+  margin: 0 1rem;
+  border: 1px solid #f1f1f1;
+  background-color: #fff;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.submit {
+  margin: 0;
+}
