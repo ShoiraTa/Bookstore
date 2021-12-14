@@ -31,6 +31,12 @@
   color: #85b0d5;
 }
 
+button {
+  border: none;
+  background-color: #fff;
+  color: #85b0d5;
+}
+
 .actions ul li:not(:last-child) {
   border-right: 1px solid #d3d2d2;
   cursor: pointer;
