@@ -1,10 +1,14 @@
 .bookInput {
-  width: 500px;
+  width: 200px;
   height: 35px;
   border-radius: 5px;
   border: 1px solid #f1f1f1;
   outline: none;
   padding: 0 1rem;
+}
+
+.bookInput:first-child {
+  margin-right: 1rem;
 }
 
 .bookSelect,
