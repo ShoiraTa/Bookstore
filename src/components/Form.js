@@ -6,14 +6,10 @@ import './Form.css';
 function Form() {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
-  const [author, setAuthor] = useState('');
   const [category, setCategory] = useState('');
 
   const titleHandler = (event) => {
     setTitle(event.target.value);
-  };
-  const authorHandler = (event) => {
-    setAuthor(event.target.value);
   };
   const categoryHandler = (event) => {
     setCategory(event.target.value);
@@ -23,19 +19,16 @@ function Form() {
     e.preventDefault();
     const newBook = {
       title,
-      id: Math.round(Math.random() * 1000),
-      author,
+      item_id: Math.round(Math.random() * 1000),
       category,
     };
     dispatch(addBook(newBook));
     setTitle('');
-    setAuthor('');
   };
 
   return (
     <form onSubmit={submitBookToStore}>
       <input className="bookInput" type="text" placeholder="Book title" value={title} onChange={titleHandler} required />
-      <input className="bookInput" type="text" placeholder="Author" value={author} onChange={authorHandler} required />
       <select className="bookSelect" name="category" placeholder="optiopn" value={category} onChange={categoryHandler} required>
         <option value="Fiction">Fiction</option>
         <option value="History">History</option>

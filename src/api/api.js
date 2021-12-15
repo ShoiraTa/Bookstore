@@ -7,6 +7,13 @@ export const fetchBooks = async () => {
   return response.data;
 };
 
-export const deleteBooks = async () => {
-
+export const deleteBook = async (id) => {
+  const response = await axios.delete(`${URL}/${id}`);
+  return response;
 };
+
+export const postBook = async (book) => axios({
+  method: 'post',
+  url: URL,
+  data: book,
+});
