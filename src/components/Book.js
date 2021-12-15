@@ -8,11 +8,11 @@ function Book({ singleBook }) {
   const dispatch = useDispatch();
 
   const deleteHandler = () => {
-    dispatch(removeBook(singleBook.id));
+    dispatch(removeBook(singleBook.item_id));
   };
   return (
     <>
-      <div className="bookRow" key={singleBook.id}>
+      <div className="bookRow" key={singleBook.item_id}>
         <div className="bookInfo">
           <p className="category">{singleBook.category}</p>
           <h1 className="title">
@@ -43,7 +43,7 @@ Book.propTypes = {
     title: PropTypes.string,
     author: PropTypes.string,
     category: PropTypes.string,
-    id: PropTypes.number,
+    item_id: PropTypes.number,
   }).isRequired,
 };
 
