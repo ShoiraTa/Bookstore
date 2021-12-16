@@ -6,12 +6,9 @@
 body {
   font-family: Montserrat, sans-serif;
   background-color: #f5f6fa;
-  
 }
-
 
 nav .fas.fa-user {
   color: var(--main-color);
   cursor: pointer;
 }
-

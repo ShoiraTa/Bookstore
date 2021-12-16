@@ -1,17 +1,5 @@
 body {
   padding: 6rem 3.75rem 7.688rem 6.25rem;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgba(245, 246, 250, 0.726);
@@ -33,9 +21,7 @@ nav {
 }
 
 .logo {
-  font-family: Montserrat;
   font-size: 1.875rem;
-  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -44,7 +30,7 @@ nav {
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
-  margin-left: 6.25rem  ;
+  margin-left: 6.25rem;
 }
 
 .container {
@@ -60,15 +46,15 @@ header .link {
   text-transform: uppercase;
 }
 
-header .link:first-child{
-  color: #121212
+header .link:first-child {
+  color: #121212;
 }
 
-header .link:last-child{
-  color: #9a9a9b
+header .link:last-child {
+  color: #9a9a9b;
 }
 
-.fa-user{
+.fa-user {
   position: absolute;
   right: 6rem;
   border: 1px solid #e8e8e8;
