@@ -29,12 +29,17 @@ function Form() {
   return (
     <form onSubmit={submitBookToStore}>
       <input className="bookInput" type="text" placeholder="Book title" value={title} onChange={titleHandler} required />
-      <select className="bookSelect" name="category" placeholder="optiopn" value={category} onChange={categoryHandler} required>
-        <option value="Fiction">Fiction</option>
-        <option value="History">History</option>
-        <option value="History">Manga</option>
-      </select>
-      <input className="submit" type="submit" value="Add book" />
+      <div className="custome-select">
+        <select className="bookSelect" name="category" placeholder="optiopn" value={category} onChange={categoryHandler} required>
+          <option className="option" selected>Category</option>
+          <option className="option" value="Fiction">Fiction</option>
+          <option className="option" value="History">History</option>
+          <option className="option" value="History">Manga</option>
+        </select>
+      </div>
+      <span className="custome-arrow" />
+      <input className="update-btn add-book-btn" type="submit" value="Add book" />
+
     </form>
   );
 }

@@ -16,7 +16,7 @@ function Books() {
         allBooks.length > 0 ? <Book singleBook={book} key={book.id} /> : ''
       ))}
       <div className="formContainer">
-        <h1>Add a new Book</h1>
+        <h1 className="add-new">Add a new Book</h1>
         <Form />
       </div>
     </div>

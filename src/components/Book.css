@@ -1,7 +1,14 @@
 .bookRow {
-  border: 1px solid #f1f1f1;
+  border: 1px solid #e8e8e8;
   background-color: #fff;
-  padding: 1.2rem;
+  padding: 2rem 5rem 2rem 1.6rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-section {
+  width: 50%;
 }
 
 .category,
@@ -9,35 +16,105 @@
 .author {
   margin: 0;
   padding: 0 10px;
+  font-size: 0.6rem;
+}
+
+.title {
+  font-size: 1.375rem;
+  letter-spacing: -0.2px;
 }
 
 .category {
-  color: #979797;
+  color: #121212;
+  opacity: 0.5;
+  font-weight: bold;
   font-weight: 700;
 }
 
 .author {
-  color: #85b0d5;
+  color: #4386bf;
+  padding: 2px 10px;
 }
 
 .actions ul {
   display: flex;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .actions ul li {
-  padding: 0 10px;
-  color: #85b0d5;
+  margin-top: 1.3rem;
+  padding: 0 8px;
+  color: #4386bf;
+  font-size: 0.875rem;
 }
 
 button {
   border: none;
   background-color: #fff;
-  color: #85b0d5;
+  color: #4386bf;
+  cursor: pointer;
 }
 
 .actions ul li:not(:last-child) {
-  border-right: 1px solid #d3d2d2;
+  border-right: 1px solid #e8e8e8;
   cursor: pointer;
+}
+
+.middle-section {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+}
+
+.progress-div {
+  width: 4.25rem;
+}
+
+.presentage-text {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.completed-text {
+  opacity: 0.5;
+  font-size: 0.875rem;
+  color: #121212;
+}
+
+.current-chapter {
+  font-size: 0.813rem;
+  font-weight: 300;
+  opacity: 0.8;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.chapter {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.border {
+  width: 23%;
+  border-right: 1px solid #e8e8e8;
+}
+
+.update-btn {
+  background-color: var(--main-color);
+  width: 100%;
+  border-radius: 3px;
+  height: 2.063rem;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+}
+
+.right-section {
+  width: 17%;
 }
