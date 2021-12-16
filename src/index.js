@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+
 import {
   BrowserRouter as Router, Routes, Route, Link,
 } from 'react-router-dom';
@@ -18,6 +19,7 @@ ReactDOM.render(
             <Link className="logo" to="/"> Bookstore</Link>
             <Link className="link" to="/">Books</Link>
             <Link className="link" to="/categories">Categories</Link>
+            <i className="fas fa-user" />
           </nav>
         </header>
         <Routes>

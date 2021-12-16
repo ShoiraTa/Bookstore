@@ -1,5 +1,5 @@
 body {
-  margin: 5rem;
+  padding: 6rem 3.75rem 7.688rem 6.25rem;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -20,10 +20,11 @@ body {
 header {
   background-color: #fff;
   border-bottom: 1px solid #f1f1f1;
+  position: relative;
 }
 
 nav {
-  height: 80px;
+  height: 6rem;
   width: 400px;
   display: flex;
   align-items: center;
@@ -32,29 +33,45 @@ nav {
 }
 
 .logo {
-  font-size: 2rem;
-  color: #0590fe;
+  font-family: Montserrat;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
+  margin-left: 6.25rem  ;
 }
 
 .container {
-  box-shadow: 2px 5px 20px 1px rgba(0, 5, 5, 0.2);
+  box-shadow: 2px 5px 20px 1px rgba(0, 5, 5, 0.05);
 }
 
 header .link {
   color: #555;
   text-decoration: none;
   cursor: pointer;
+  font-size: 0.813rem;
+  margin-left: 2.3rem;
+  text-transform: uppercase;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+header .link:first-child{
+  color: #121212
+}
+
+header .link:last-child{
+  color: #9a9a9b
+}
+
+.fa-user{
+  position: absolute;
+  right: 6rem;
+  border: 1px solid #e8e8e8;
+  padding: 1rem;
+  border-radius: 100%;
 }
